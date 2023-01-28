@@ -59,6 +59,9 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<image>
+						<name>josephnafaa/${project.artifactId}</name>
+					</image>
 				</configuration>
 			</plugin>
 		</plugins>

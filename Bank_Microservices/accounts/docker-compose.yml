@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+
+  accounts:
+    image: josephnafaa/accounts:latest
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - josephnafaa-network
+    
+  loans:
+    image: josephnafaa/loans:latest
+    mem_limit: 700m
+    ports:
+      - "8090:8090"
+    networks:
+      - josephnafaa-network
+    
+  cards:
+    image: josephnafaa/cards:latest
+    mem_limit: 700m
+    ports:
+      - "9000:9000"
+    networks:
+      - josephnafaa-network
+    
+networks:
+  josephnafaa-network:
